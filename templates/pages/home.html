@@ -1,0 +1,21 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block title %}Home page{% endblock title %}
+
+{% block content %}
+<figure class="text-center">
+  <blockquote class="blockquote">
+    <p class="display-1 text-primary">Welcome to my cereal site.</p>
+      <p class="display-3 text-secondary">Grab a spoon and dig in!</p>
+      <p class="display-6 text-dark">(Click Image Below)</p>
+         <a href="{% url 'list' %}">
+          <img src="{% static 'images/blank_cereal_box.jpg' %}" class="img-fluid" alt="giant cerial box"/>
+         </a>
+          <small class="text-body-tertiary">I hope you enjoy learning about others' favorites, and that you will add some your own.</small>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    Nick
+  </figcaption>
+</figure>
+{% endblock content %}
