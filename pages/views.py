@@ -80,4 +80,4 @@ class SnackViewSet(viewsets.ModelViewSet):
     queryset = Snack.objects.all()
     serializer_class = SnackSerializer
     permission_classes = [permissions.IsAuthenticated]
-    permission_classes = (IsOwnerOrReadOnly,)
+    # permission_classes = (IsOwnerOrReadOnly,)
